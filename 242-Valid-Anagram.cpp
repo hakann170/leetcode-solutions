@@ -1,3 +1,4 @@
+// This part is solution by using unorderd_map
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -53,3 +54,49 @@ if (result){
 }
     return 0;
 }
+// sort() 
+/*
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+class Solution{
+public:
+    bool isAnagram(string s, string t){
+        if (s.size() != t.size()){
+            return false;
+        }
+
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+
+        if (s == t){ 
+            return true;
+        }
+    }
+};
+
+int main(){
+
+    Solution sol;
+    string s_karakteri;
+    string t_karakteri;
+
+    cout << "Ilk kelimeyi giriniz: ";
+    cin >> s_karakteri;
+
+    cout <<"Ikinci elemani giriniz: ";
+    cin >> t_karakteri;
+
+    bool sonuc = sol.isAnagram(s_karakteri,t_karakteri); 
+    
+    if (sonuc){
+        cout << "Girdiginiz kelimeler anagram";
+    } else{
+        cout <<"Kelimeler anagram degil";
+    }
+
+    return 0;
+}
+*/
